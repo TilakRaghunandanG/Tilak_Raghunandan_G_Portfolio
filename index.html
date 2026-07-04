@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tilak Raghunandan G — AI &amp; ML Engineer</title>
+<meta name="description" content="Portfolio of Tilak Raghunandan G — AI/ML Engineer specializing in Computer Vision, NLP &amp; LLMs, and Full-Stack Development.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Scan-line cursor accent (decorative, purely visual) -->
+<div class="crosshair" id="crosshair" aria-hidden="true">
+  <span class="crosshair-h"></span>
+  <span class="crosshair-v"></span>
+</div>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-mark">TR<span class="nav-mark-dot">.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about" data-idx="00">about</a>
+    <a href="#experience" data-idx="01">experience</a>
+    <a href="#hackathons" data-idx="02">hackathons</a>
+    <a href="#projects" data-idx="03">projects</a>
+    <a href="#skills" data-idx="04">skills</a>
+    <a href="#education" data-idx="05">education</a>
+    <a href="#contact" data-idx="06">contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+    </button>
+    <a class="nav-cta" href="mailto:tilakraghunandan0106@gmail.com">say hello</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow reveal"><span class="eyebrow-tag">[ live_detection.py ]</span></p>
+        <h1 class="hero-title reveal">
+          <span class="hero-title-line">Tilak Raghunandan G</span>
+        </h1>
+        <p class="hero-role reveal">
+          AI &amp; ML Engineer <span class="dot-sep">·</span> Computer Vision <span class="dot-sep">·</span> NLP &amp; LLMs <span class="dot-sep">·</span> Full‑Stack Developer
+        </p>
+        <p class="hero-desc reveal">
+          I build systems that see, read, and reason — from a 95%-accuracy retinal
+          diagnostics model to real‑time RAG pipelines and multilingual emergency
+          platforms. Currently an AI/ML undergraduate at PES Institute of Technology
+          and Management, shipping projects end‑to‑end and podium‑finishing at
+          hackathons along the way.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="assets/Tilak_Raghunandan_G_Resume.pdf" class="btn btn-ghost btn-download" download>
+            <svg class="btn-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 1v9m0 0L4.5 6.5M8 10l3.5-3.5M2 12.5v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download résumé
+          </a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-meta reveal">
+          <span class="meta-chip"><span class="meta-key">location</span> Shivamogga, Karnataka, IN</span>
+          <span class="meta-chip"><span class="meta-key">status</span> open to ML / CV internships</span>
+        </div>
+      </div>
+
+      <div class="hero-frame reveal">
+        <div class="detect-box">
+          <img src="assets/photo.jpg" alt="Portrait of Tilak Raghunandan G" class="hero-photo" id="heroPhoto">
+          <span class="scan-line" aria-hidden="true"></span>
+          <span class="corner corner-tl"></span>
+          <span class="corner corner-tr"></span>
+          <span class="corner corner-bl"></span>
+          <span class="corner corner-br"></span>
+
+          <span class="tag tag-role" style="--d:0.9s">role: ml_engineer <em>0.98</em></span>
+          <span class="tag tag-loc" style="--d:1.15s">origin: karnataka, in <em>0.94</em></span>
+          <span class="tag tag-focus" style="--d:1.4s">focus: vision + nlp <em>0.97</em></span>
+        </div>
+        <p class="frame-caption">object_id: 001 &nbsp;·&nbsp; class: engineer &nbsp;·&nbsp; confidence: 0.98</p>
+      </div>
+    </div>
+
+    <div class="scroll-cue reveal" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"><i></i></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <p class="section-eyebrow reveal">[ 00 ] about</p>
+    <div class="about-grid">
+      <h2 class="section-title reveal">Results‑driven, hands‑on, <span class="accent">competition‑tested.</span></h2>
+      <div class="about-body reveal">
+        <p>
+          I'm an AI &amp; Machine Learning undergraduate who prefers building over
+          reading about building. My internship at Unriddle Technologies had me
+          engineering RAG pipelines and LLM‑backed retrieval systems in production‑adjacent
+          conditions; outside of that, I've stacked three hackathon podium finishes across
+          state and national events.
+        </p>
+        <p>
+          I move comfortably between deep learning research — CNNs, transfer learning,
+          medical image segmentation — and full‑stack delivery of the products those
+          models live inside. I'm looking for AI/ML Engineering, Computer Vision, or NLP
+          roles where I can contribute from day one.
+        </p>
+        <div class="stat-row">
+          <div class="stat">
+            <span class="stat-num" data-count="95" data-suffix="%">0%</span>
+            <span class="stat-label">retinal model accuracy</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">hackathon podiums</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="180" data-suffix="+">0</span>
+            <span class="stat-label">teams outranked (combined)</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">shipped end‑to‑end projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <p class="section-eyebrow reveal">[ 01 ] experience</p>
+    <h2 class="section-title reveal">The pipeline so far.</h2>
+
+    <div class="pipeline">
+      <svg class="pipeline-line" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="2" y1="0" x2="2" y2="100" />
+      </svg>
+
+      <article class="pipe-node reveal">
+        <div class="pipe-dot"></div>
+        <div class="pipe-card">
+          <div class="pipe-head">
+            <h3>AI / ML Engineering Intern</h3>
+            <span class="pipe-date">Oct 2025 – Feb 2026</span>
+          </div>
+          <p class="pipe-org">Unriddle Technologies · Shivamogga, Karnataka</p>
+          <ul class="pipe-list">
+            <li>Designed and deployed end‑to‑end Retrieval‑Augmented Generation (RAG) pipelines powered by LLMs, vector embeddings, and semantic search over large document corpora — cutting retrieval latency and improving answer relevance.</li>
+            <li>Applied prompt engineering strategies and tuned retrieval parameters to boost Q&amp;A accuracy, validated through automated evaluation benchmarks.</li>
+            <li>Built and maintained NLP preprocessing and text‑chunking workflows for multi‑document knowledge retrieval within an Agile team.</li>
+            <li>Integrated embedding generation and semantic similarity scoring into a document intelligence product, improving output coherence across query types.</li>
+          </ul>
+          <div class="pipe-tags">
+            <span>RAG</span><span>LLMs</span><span>Vector Search</span><span>Prompt Engineering</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="pipe-node reveal">
+        <div class="pipe-dot"></div>
+        <div class="pipe-card">
+          <div class="pipe-head">
+            <h3>Volunteer Coordinator</h3>
+            <span class="pipe-date">Sep 2024 – Present</span>
+          </div>
+          <p class="pipe-org">Anveshana Startup Summit · PES Institute of Technology and Management</p>
+          <ul class="pipe-list">
+            <li>Led end‑to‑end operations for a large‑scale multi‑day innovation summit, coordinating cross‑functional teams and enabling high‑value networking between 50+ startups and industry mentors.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== HACKATHONS ===== -->
+  <section class="section" id="hackathons">
+    <p class="section-eyebrow reveal">[ 02 ] hackathons &amp; achievements</p>
+    <h2 class="section-title reveal">Podium, three times over.</h2>
+
+    <div class="podium-grid">
+      <article class="podium-card rank-1 reveal">
+        <span class="podium-rank">1st Runner‑Up</span>
+        <h3>Presidency University Hackathon</h3>
+        <p class="podium-date">48‑hour sprint · March 2026</p>
+        <p class="podium-desc">Built and presented an award‑winning AI solution tackling a complex real‑world problem, beating 100+ competing teams.</p>
+      </article>
+
+      <article class="podium-card rank-2 reveal">
+        <span class="podium-rank">2nd Runner‑Up</span>
+        <h3>DIGITISE 2K25</h3>
+        <p class="podium-date">Adichunchanagiri Institute of Technology, Chikkamagaluru · Oct 2025</p>
+        <p class="podium-desc">Architected a real‑time computer vision pipeline for automated agricultural quality control, earning podium placement among 80+ teams.</p>
+      </article>
+
+      <article class="podium-card rank-3 reveal">
+        <span class="podium-rank">Top 5 Finalist</span>
+        <h3>Bapuji Institute of Technology Hackathon</h3>
+        <p class="podium-date">May 2025</p>
+        <p class="podium-desc">Recognized for the Multilingual Emergency Support Platform — a real‑time NLP + speech translation system bridging language gaps between rural doctors and patients.</p>
+      </article>
+    </div>
+
+    <p class="podium-note reveal">
+      Also competed (national level) at MONAITHON 2025 (JNNCE Shivamogga), Agentic AI Day
+      (Google Cloud × Hack2Skill), and the GDG Solution Challenge 2025.
+    </p>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <p class="section-eyebrow reveal">[ 03 ] projects</p>
+    <h2 class="section-title reveal">Shipped, evaluated, benchmarked.</h2>
+
+    <div class="model-grid">
+
+      <article class="model-card reveal">
+        <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+        <div class="model-head">
+          <h3>AI Retinal Disease Detection System</h3>
+          <span class="model-year">2025</span>
+        </div>
+        <p class="model-type">Academic research project</p>
+        <p class="model-desc">Multi‑class retinal disease classifier using transfer learning on ResNet and VGG16, with a U‑Net segmentation head for blood‑vessel mapping on labelled ophthalmology data. Full evaluation pipeline: ROC‑AUC, confusion matrices, per‑class F1.</p>
+        <div class="model-metric"><span>accuracy</span><strong>95%</strong></div>
+        <div class="pipe-tags"><span>PyTorch</span><span>CNN</span><span>U‑Net</span><span>ResNet</span><span>VGG16</span><span>OpenCV</span></div>
+      </article>
+
+      <article class="model-card reveal">
+        <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+        <div class="model-head">
+          <h3>Multilingual Emergency Support Platform</h3>
+          <span class="model-year">2025</span>
+        </div>
+        <p class="model-type">Hackathon project · Top 5 Finalist</p>
+        <p class="model-desc">Full‑stack rural healthcare platform integrating real‑time speech‑to‑text, NLP‑powered multilingual translation, and LLM‑based medical triage to remove language barriers between doctors and patients. Built for low‑connectivity environments.</p>
+        <div class="model-metric"><span>result</span><strong>Top 5 / national</strong></div>
+        <div class="pipe-tags"><span>React.js</span><span>Node.js</span><span>NLP</span><span>LLM APIs</span><span>Speech‑to‑Text</span></div>
+      </article>
+
+      <article class="model-card reveal">
+        <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+        <div class="model-head">
+          <h3>Vegetable Quality Classification System</h3>
+          <span class="model-year">2025</span>
+        </div>
+        <p class="model-type">Academic project · 2nd Runner‑Up, DIGITISE 2K25</p>
+        <p class="model-desc">Real‑time CV inference pipeline using image segmentation and ML classifiers to automate agricultural produce sorting, replacing manual inspection at processing facilities. Optimized for fast edge inference.</p>
+        <div class="model-metric"><span>categories</span><strong>15+</strong></div>
+        <div class="pipe-tags"><span>Python</span><span>OpenCV</span><span>CNN</span><span>Scikit‑learn</span></div>
+      </article>
+
+      <article class="model-card reveal">
+        <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+        <div class="model-head">
+          <h3>Fitness &amp; Calorie Tracker</h3>
+          <span class="model-year">2024</span>
+        </div>
+        <p class="model-type">Personal project</p>
+        <p class="model-desc">Production‑ready full‑stack web app with a RESTful API (Node.js / MySQL) and a React.js dashboard for meal logging, calorie goal tracking, and fitness analytics, backed by a normalized relational schema.</p>
+        <div class="model-metric"><span>stack</span><strong>MERN‑style</strong></div>
+        <div class="pipe-tags"><span>React.js</span><span>Node.js</span><span>MySQL</span><span>REST API</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <p class="section-eyebrow reveal">[ 04 ] skills</p>
+    <h2 class="section-title reveal">The stack, by layer.</h2>
+
+    <div class="skills-grid">
+      <div class="skill-cluster reveal">
+        <h3>ML / Deep Learning</h3>
+        <div class="pipe-tags"><span>PyTorch</span><span>Scikit‑learn</span><span>CNNs</span><span>Transfer Learning</span><span>U‑Net</span><span>ResNet</span><span>VGG16</span><span>Data Augmentation</span><span>Model Evaluation</span><span>Hyperparameter Tuning</span><span>Feature Engineering</span></div>
+      </div>
+      <div class="skill-cluster reveal">
+        <h3>NLP &amp; LLMs</h3>
+        <div class="pipe-tags"><span>RAG Pipelines</span><span>LLM Integration</span><span>Prompt Engineering</span><span>Embeddings</span><span>Semantic Search</span><span>Vector Databases</span><span>Speech‑to‑Text</span><span>AI Translation</span><span>NLP Preprocessing</span><span>Hugging Face</span></div>
+      </div>
+      <div class="skill-cluster reveal">
+        <h3>Computer Vision</h3>
+        <div class="pipe-tags"><span>OpenCV</span><span>Image Segmentation</span><span>Object Detection</span><span>Real‑Time Inference</span><span>Image Processing</span><span>Feature Extraction</span><span>Medical Image Analysis</span></div>
+      </div>
+      <div class="skill-cluster reveal">
+        <h3>Web &amp; Full‑Stack</h3>
+        <div class="pipe-tags"><span>React.js</span><span>Node.js</span><span>HTML5</span><span>CSS3</span><span>REST APIs</span><span>PHP</span><span>Responsive Design</span></div>
+      </div>
+      <div class="skill-cluster reveal">
+        <h3>Databases</h3>
+        <div class="pipe-tags"><span>MySQL</span><span>MongoDB</span><span>Vector Databases</span><span>Relational Schema Design</span></div>
+      </div>
+      <div class="skill-cluster reveal">
+        <h3>Programming</h3>
+        <div class="pipe-tags"><span>Python</span><span>C</span><span>Java</span><span>Bash</span></div>
+      </div>
+      <div class="skill-cluster reveal">
+        <h3>Tools &amp; Platforms</h3>
+        <div class="pipe-tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Google Colab</span><span>Jupyter</span><span>Linux CLI</span><span>Google Cloud</span><span>n8n</span><span>Postman</span></div>
+      </div>
+      <div class="skill-cluster reveal">
+        <h3>Languages</h3>
+        <div class="pipe-tags"><span>English — Fluent</span><span>Hindi — Proficient</span><span>Kannada — Native</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <p class="section-eyebrow reveal">[ 05 ] education</p>
+    <h2 class="section-title reveal">Where the training happened.</h2>
+
+    <div class="edu-list">
+      <article class="edu-card reveal">
+        <div class="edu-head">
+          <h3>Bachelor of Engineering — Artificial Intelligence &amp; Machine Learning</h3>
+          <span class="pipe-date">Jan 2023 – Jan 2027 (Expected)</span>
+        </div>
+        <p class="pipe-org">PES Institute of Technology and Management, Shivamogga <span class="dot-sep">·</span> CGPA 7.35 / 10</p>
+        <p class="model-desc">Relevant coursework: Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, Data Structures &amp; Algorithms, Database Management Systems, Operating Systems, Linear Algebra &amp; Statistics. Active participant in national hackathons, applied research projects, and campus innovation events.</p>
+      </article>
+
+      <article class="edu-card reveal">
+        <div class="edu-head">
+          <h3>Pre‑University Education — PCMCs / Science</h3>
+          <span class="pipe-date">Jan 2022 – Jan 2023</span>
+        </div>
+        <p class="pipe-org">DVS Composite PU College, Shivamogga</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <p class="section-eyebrow reveal">[ 06 ] contact</p>
+    <h2 class="section-title reveal">Let's build something that ships.</h2>
+    <p class="contact-desc reveal">Open to AI/ML Engineering, Computer Vision, and NLP internship roles. Reach out directly — I reply fast.</p>
+
+    <div class="contact-grid reveal">
+      <a class="contact-card" href="mailto:tilakraghunandan0106@gmail.com">
+        <span class="contact-key">email</span>
+        <span class="contact-val">tilakraghunandan0106@gmail.com</span>
+      </a>
+      <a class="contact-card" href="tel:+918317338824">
+        <span class="contact-key">phone</span>
+        <span class="contact-val">+91 83173 38824</span>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/tilak-raghunandan-g" target="_blank" rel="noopener">
+        <span class="contact-key">linkedin</span>
+        <span class="contact-val">/in/tilak-raghunandan-g</span>
+      </a>
+      <a class="contact-card" href="https://github.com/TilakRaghunandanG" target="_blank" rel="noopener">
+        <span class="contact-key">github</span>
+        <span class="contact-val">/TilakRaghunandanG</span>
+      </a>
+      <a class="contact-card contact-card-resume" href="assets/Tilak_Raghunandan_G_Resume.pdf" download>
+        <span class="contact-key">resume</span>
+        <span class="contact-val">Download PDF ↓</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>designed &amp; built by Tilak Raghunandan G <span class="dot-sep">·</span> Shivamogga, Karnataka, India</p>
+  <a href="#top" class="footer-top">back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
